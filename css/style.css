@@ -27,6 +27,40 @@ body {
   font-size: 50px;
   margin-bottom: 40px;
 }
+.text-red{
+  color: #f00;
+}
+.text-orange{
+  color: #f90;
+}
+.text-yellow{
+  color: #fcb900;
+}
+.text-ligthgreen{
+  color: #00d084;
+}
+.text-green{
+  color: #218121;
+}
+.text-blue{
+  color: #2855e9;
+}
+.text-violet{
+  color: #c751c0;
+}
+.btn-violet{
+  background-color: #c751c0;
+  color: #fff;
+  border-radius:15px;
+}
+.btn-violet:hover{
+  background-color: #af4ea9;
+  color: #fff;
+}
+.btn-violet:focus{
+  box-shadow: none;
+}
+
 /*------------------------------
 menu section
 --------------------------------*/
@@ -85,8 +119,6 @@ home section
   left: 0;
   bottom: 0;
   z-index: 20;
-  /* background:var(--color-darkgreen); */
-  /* clip-path: polygon(26% 88%, 40% 83%, 57% 89%, 80% 86%, 100% 76%, 100% 100%, 0 100%, 0 83%); */
 }
 
 .home .carousel {
@@ -171,18 +203,19 @@ footer a {
   text-align: center;
   width: 40px;
   margin: auto;
-  color: #fff;
   transition: all 0.4s;
 }
-
-footer .fac:hover {
+footer .fac{
   color: var(--color-lightblue);
 }
-footer .ins:hover {
+footer .ins{
   color: var(--color-violeta);
 }
-footer .wha:hover {
+footer .wha{
   color: var(--color-green);
+}
+footer a:hover{
+  color: #fff;
 }
 
 footer p {
@@ -220,20 +253,37 @@ section products
   font-size: 25px;
   color: var(--color-lightblue);
 }
-
 .section-products .card p{
   font-size: 15px;
   color: #797777;
 }
-
 .section-products .card .btn{
-  background: var(--color-violeta);
   color: #fff;
-  box-shadow: none;
+  border-radius:15px;
+}
+.section-products .card .btn:focus{
+  box-shadow: none;;
+}
+.section-products .card .btn-1{
+  background: var(--color-violeta);
+}
+.section-products .card .btn-1:hover{
+  background: #af4ea9;
 }
 
-.section-products .card .btn:hover{
-  background: #af4ea9;
+.section-products .card .btn-2{
+  background: var(--color-red);
+}
+
+.section-products .card .btn-2:hover{
+  background: #dd2323;
+}
+
+.section-products .card .btn-3{
+  background: var(--color-green);
+}
+.section-products .card .btn-3:hover{
+  background: #62c788;
 }
 
 /*-------------------------------------------------------
@@ -241,6 +291,9 @@ contact page
 ---------------------------------------------------------*/
 .section-form{
   padding-top: 300px;
+}
+.section-form h1{
+  font-size: 50px;
 }
 /*-------------------------------------
 responsive
