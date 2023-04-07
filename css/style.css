@@ -1,0 +1,290 @@
+/*--------------------------------------------
+font
+----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&family=Varela+Round&display=swap");
+
+body {
+  font-family: "Titan One", cursive;
+}
+
+:root {
+  --color-blue: #6e9fe4;
+  --color-green: #00d084;
+  --color-yellow: #fcb900;
+  --color-red: #f00;
+  --color-violeta: #c751c0;
+  --color-darkgreen: #305e27;
+  --color-lightblue: #2855e9;
+
+  --color-footer: #0a1844;
+}
+
+.padding-section {
+  padding: 100px 0;
+}
+.section-title {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+/*------------------------------
+menu section
+--------------------------------*/
+.menu {
+  position: absolute;
+  width: 100%;
+  z-index: 26;
+}
+.menu .navbar{
+  background-color: var(--color-blue);
+}
+
+.menu .navbar-toggler i{
+  color: #fff;
+  font-size: 40px;
+}
+.menu .navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+.menu .navbar-brand{
+  height: 200px;
+}
+.menu .navbar-brand img{
+  height: 100%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--color-violeta);
+}
+/*---------------------------------
+home section
+-----------------------------------*/
+.home {
+  height: 110vh;
+  position: relative;
+  z-index: 10;
+  background: var(--color-blue);
+  padding-top: 25%;
+  z-index: 15;
+  overflow: hidden;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/montañas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  /* background:var(--color-darkgreen); */
+  /* clip-path: polygon(26% 88%, 40% 83%, 57% 89%, 80% 86%, 100% 76%, 100% 100%, 0 100%, 0 83%); */
+}
+
+.home .carousel {
+  position: relative;
+  z-index: 25;
+}
+
+.home .carousel .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -15%;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 0;
+  margin-left: 15%;
+}
+.home .carousel-item {
+  overflow: hidden;
+}
+
+.home .carousel .col-lg-3 {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 25%;
+}
+
+.carousel .card {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel .card img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.divisor {
+  width: 100%;
+  height: 100px;
+  background-color: #427239;
+  clip-path: ellipse(71% 84% at 51% 14%);
+}
+
+/*--------------------------------------------------------
+section about
+-----------------------------------------------------------*/
+.section-about p {
+  font-size: 20px;
+}
+.section-about .img {
+  position: relative;
+  /* left: 10%; */
+}
+.section-about .img,
+.section-about .img img {
+  width: 100%;
+}
+
+/*-------------------------------------------------------
+footer section
+----------------------------------------------------------*/
+.divisor-2 {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-footer);
+  clip-path: ellipse(100% 68% at 7% 82%);
+}
+
+footer {
+  background-color: var(--color-footer);
+}
+
+footer a {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  width: 40px;
+  margin: auto;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+footer .fac:hover {
+  color: var(--color-lightblue);
+}
+footer .ins:hover {
+  color: var(--color-violeta);
+}
+footer .wha:hover {
+  color: var(--color-green);
+}
+
+footer p {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------
+encabezado de servicios
+----------------------------------------------------*/
+.home-services{
+  padding-top: 300px;
+}
+
+.home-services h1{
+  font-size: 50px;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(51, 167, 22);
+}
+
+
+/*-------------------------------------------------------
+section products
+---------------------------------------------------------*/
+.section-products .card{
+  text-align: center;
+  /* font-family: "Varela Round", sans-serif; */
+}
+.section-products .card h5{
+  font-size: 25px;
+  color: var(--color-lightblue);
+}
+
+.section-products .card p{
+  font-size: 15px;
+  color: #797777;
+}
+
+.section-products .card .btn{
+  background: var(--color-violeta);
+  color: #fff;
+  box-shadow: none;
+}
+
+.section-products .card .btn:hover{
+  background: #af4ea9;
+}
+
+/*-------------------------------------------------------
+contact page
+---------------------------------------------------------*/
+.section-form{
+  padding-top: 300px;
+}
+/*-------------------------------------
+responsive
+--------------------------------------*/
+@media (max-width: 992px){
+  .home {
+    padding-top: 30%;
+  }
+  .home .carousel .col-lg-3 {
+    width: 27%;
+  }
+  .carousel .card {
+    height: 150px;
+  }
+
+  .home .carousel {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 768px){
+  .home .carousel .col-lg-3 {
+    width: 40%;
+  }
+  .carousel .card {
+    height: 150px;
+  }
+}
+
+
+@media (max-width: 576px){
+  .menu .navbar-brand{
+    height: 100px;
+  }
+  .home .carousel .col-lg-3 {
+    width: 70%;
+  }
+  .carousel .card {
+    height: 170px;
+  }
+.home .carousel .carousel-indicators {
+    bottom: -5%;
+ }
+  .home .carousel {
+    margin-top: 20%;
+  }
+}
