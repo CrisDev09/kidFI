@@ -218,10 +218,11 @@ footer a:hover{
   color: #fff;
 }
 
-footer p {
+footer p, footer .power {
   color: #fff;
   font-family: "Varela Round", sans-serif;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 /*------------------------------------------------
