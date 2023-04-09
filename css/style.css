@@ -316,16 +316,34 @@ responsive
 }
 
 @media (max-width: 768px){
+  .section-title {
+    font-size: 40px;
+  }
   .home .carousel .col-lg-3 {
     width: 40%;
   }
   .carousel .card {
     height: 150px;
   }
+  .home-services h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .t-sm-center{
+    text-align: center;
+}
+.section-form h1{
+  font-size: 40px;
+  text-align: center;
+}
+  
 }
 
 
 @media (max-width: 576px){
+  .section-title {
+    font-size: 30px;
+  }
   .menu .navbar-brand{
     height: 100px;
   }
@@ -341,4 +359,17 @@ responsive
   .home .carousel {
     margin-top: 20%;
   }
+  .home-services h1{
+    font-size: 30px;
+  }
+  .home-services{
+    padding-top: 140px;
+  }
+  .section-form{
+    padding-top: 140px;
+  }
+  .section-form h1{
+    font-size: 30px;
+  }
+  
 }
