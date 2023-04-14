@@ -19,7 +19,14 @@ body {
 
   --color-footer: #0a1844;
 }
-
+.line-cloud{
+  width: 100%;
+  padding-top: 130px;
+  overflow: hidden;
+}
+.line_cloud img{
+  width: 100%;
+}
 .padding-section {
   padding: 100px 0;
 }
@@ -223,13 +230,14 @@ footer p, footer .power {
   font-family: "Varela Round", sans-serif;
   margin-bottom: 0;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /*------------------------------------------------
 encabezado de servicios
 ----------------------------------------------------*/
 .home-services{
-  padding-top: 300px;
+  /* padding-top: 300px; */
 }
 
 .home-services h1{
@@ -240,6 +248,59 @@ encabezado de servicios
   width: 100%;
   height: 1px;
   background-color: rgb(51, 167, 22);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim_1,
+.anim_2,
+.anim_3,
+.anim_4,
+.anim_5,
+.anim_6,
+.anim_7,
+.anim_8{
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+.anim_1 {
+  animation-delay: 0.5s;
+}
+
+.anim_2 {
+  animation-delay: 1s;
+}
+.anim_3{
+  animation-delay: 1.5s;
+}
+
+.anim_4{
+  animation-delay: 2s;
+}
+
+.anim_5 {
+  animation-delay: 2.5s;
+}
+
+.anim_6 {
+  animation-delay: 3s;
+}
+
+.anim_7 {
+  animation-delay: 3.5s;
+}
+
+.anim_8 {
+  animation-delay: 4s;
 }
 
 
@@ -291,7 +352,7 @@ section products
 contact page
 ---------------------------------------------------------*/
 .section-form{
-  padding-top: 300px;
+  /* padding-top: 300px; */
 }
 .section-form h1{
   font-size: 50px;
@@ -300,6 +361,9 @@ contact page
 responsive
 --------------------------------------*/
 @media (max-width: 992px){
+  .line-cloud{
+    padding-top: 170px;
+  }
   .home {
     padding-top: 30%;
   }
@@ -316,6 +380,9 @@ responsive
 }
 
 @media (max-width: 768px){
+  .line-cloud{
+    padding-top: 170px;
+  }
   .section-title {
     font-size: 40px;
   }
@@ -341,6 +408,9 @@ responsive
 
 
 @media (max-width: 576px){
+  .line-cloud{
+    padding-top: 100px;
+  }
   .section-title {
     font-size: 30px;
   }
