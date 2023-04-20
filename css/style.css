@@ -311,6 +311,10 @@ section products
   text-align: center;
   /* font-family: "Varela Round", sans-serif; */
 }
+.section-products .card img{
+  object-fit: cover;
+  height: 50%;
+}
 .section-products .card h5{
   font-size: 25px;
   color: var(--color-lightblue);
