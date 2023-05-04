@@ -309,6 +309,7 @@ section products
 ---------------------------------------------------------*/
 .section-products .card{
   text-align: center;
+  height: 70% !important;
   /* font-family: "Varela Round", sans-serif; */
 }
 .section-products .card img{
