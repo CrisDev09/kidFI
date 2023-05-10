@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-sm">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logo.png" alt="logo" />
+                    <img src="./img/logo.png" alt="logo"/>
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -31,6 +31,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
+                        <div class="backround"><img src="./img/CLOUD-V2.png" alt="cloud"></div>
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.html" aria-current="page">Home <span
                                     class="visually-hidden"></span></a>
@@ -42,7 +43,7 @@
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +51,7 @@
         </nav>
     </header>
 
-    <div class="line-cloud"><img src="./img/cloud-line.png" alt="line cloud"></div>
+    <!-- <div class="line-cloud"><img src="./img/cloud-line.png" alt="line cloud"></div> -->
     <!----------------------------------section form ------------------------>
     <section class="section-form padding-section">
         <div class="container">
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <form class="row g-3 shadow p-2 anim_4">
+                    <!-- <form class="row g-3 shadow p-2 anim_4" >
                         <div class="col-md-6" data-aos="fade-up">
                             <label for="firstName" class="form-label">First name</label>
                             <input type="text" class="form-control" id="firstName">
@@ -102,9 +103,34 @@
                                     Check me out
                                 </label>
                             </div>
+                        </div> 
+                        <div class="col-12">
+                            <input type="submit" class="btn btn-violet" data-aos="fade-up" value="Sign in">
+                        </div>
+                    </form> -->
+                    <form class="row g-3 shadow p-2 anim_4" action="./form/form.php" method="post">
+                        <div class="col-md-6" data-aos="fade-up">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                        <div class="col-12" data-aos="fade-up">
+                            <label for="contactNumber" class="form-label">Your Contact Number</label>
+                            <input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="+503 6736 - 6767">
+                        </div>
+                        <div class="col-12" data-aos="fade-up">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="col-md-12" data-aos="fade-up">
+                            <label for="reason" class="form-label">Reason</label>
+                            <input type="text" class="form-control" id="reason" name="reason">
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-violet" data-aos="fade-up">Sign in</button>
+                            <button type="submit" class="btn btn-violet" data-aos="fade-up">Submit</button>
                         </div>
                     </form>
                 </div>

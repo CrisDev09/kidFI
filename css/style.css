@@ -77,6 +77,19 @@ menu section
   width: 100%;
   z-index: 26;
 }
+.menu .nav{
+  position: relative;
+}
+.menu .nav .backround{
+  position: absolute;
+  width: 110%;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+}
+.menu .nav .backround img{
+  width: 100%;
+}
 .menu .navbar{
   background-color: var(--color-yellow-menu);
 }
@@ -97,11 +110,13 @@ menu section
 
 .navbar-nav .nav-link {
   font-size: 20px;
-  color: #fff;
+  color: var(--color-yellow-menu);
   position: relative;
+  transition: all .4s;
 }
 .navbar-nav .nav-link:hover {
   color: var(--color-violeta);
+  transform: translateY(-10%);
 }
 /*---------------------------------
 home section
@@ -128,12 +143,16 @@ home section
   left: 0;
   bottom: 0;
   z-index: -1;
-  opacity: .5;
+  opacity: .4;
 }
 
 .home .carousel {
   position: relative;
   z-index: 25;
+}
+.home .carousel-indicators .active {
+  background-color: var(--color-yellow);
+  opacity: 1;
 }
 
 .home h1{
