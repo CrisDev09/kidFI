@@ -69,6 +69,11 @@ body {
   box-shadow: none;
 }
 
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 /*------------------------------
 menu section
 --------------------------------*/
@@ -339,12 +344,12 @@ section products
 ---------------------------------------------------------*/
 .section-products .card{
   text-align: center;
-  height: 70% !important;
+  height: 100% !important;
   /* font-family: "Varela Round", sans-serif; */
 }
 .section-products .card img{
   object-fit: cover;
-  height: 50%;
+  height: 70%;
 }
 .section-products .card h5{
   font-size: 25px;
