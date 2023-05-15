@@ -2,8 +2,8 @@
 <?php
 if($_POST) {
   $nombre1 = $_POST['firstName'];
-  $nombre1 = $_POST['lastName'];
-  $numContacto= $_POST['contactNumber']
+  $nombre2 = $_POST['lastName'];
+  $numContacto= $_POST['contactNumber'];
   $correo = $_POST['email'];
   $mensaje = $_POST['reason'];
 
