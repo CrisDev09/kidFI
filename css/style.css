@@ -353,12 +353,12 @@ section products
 ---------------------------------------------------------*/
 .section-products .card{
   text-align: center;
-  height: 100% !important;
+  /* height: 1000%; */
   /* font-family: "Varela Round", sans-serif; */
 }
 .section-products .card img{
   object-fit: cover;
-  height: 70%;
+  height: 50%;
 }
 .section-products .card h5{
   font-size: 25px;
