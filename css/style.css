@@ -72,6 +72,7 @@ body {
 .card{
   border-radius: 20px;
   overflow: hidden;
+  border: none;
 }
 
 /*------------------------------
@@ -160,14 +161,6 @@ home section
   opacity: 1;
 }
 
-.home h1{
-  font-size: 60px;
-}
-
-.home p{
-  font-size: 20px;
-  color: #d8d2d2;
-}
 .home .carousel .carousel-indicators {
   position: absolute;
   right: 0;
@@ -180,7 +173,23 @@ home section
   margin-right: 15%;
   margin-bottom: 0;
   margin-left: 15%;
+  border-radius: 10px !important;
 }
+
+.home .carousel-indicators [data-bs-target]{
+  height: 5px;
+  width: 25px;
+}
+
+.home h1{
+  font-size: 60px;
+}
+
+.home p{
+  font-size: 20px;
+  color: #d8d2d2;
+}
+
 .home .carousel-item {
   overflow: hidden;
 }
