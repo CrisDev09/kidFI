@@ -140,7 +140,7 @@ home section
 .home::after {
   content: "";
   position: absolute;
-  background-image: url("../img/banerV2.png");
+  background-image: url("../img/banerV2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
